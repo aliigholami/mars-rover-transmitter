@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root" style="width: 50%; margin: auto; padding-left: 12%;"></div>
+    <script>
+        let text='THIS IS A MESSAGE FROM PLANET MARS  '
+        let i=0
+        function textSlicer(){
+            text2=text.slice(0,i)
+            i++
+            if (i>text.length){
+                i=0
+            }
+            document.getElementById('root').innerHTML=`<p>${text2}</p>`
+            setTimeout(textSlicer, 50)
+        }
+        textSlicer()
+        // function messageShower(){
+        //     setTimeout(textSlicer, 10000)
+        //     messageShower();
+        // }
+        // messageShower();
+    </script>
+</body>
+</html>
