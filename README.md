@@ -1,1 +1,1 @@
-# this is a exercise to understand how slice method works
+# this is an exercise to understand how slice method works
